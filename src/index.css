@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Envy Code Regular";
+  src: url("/fonts/Envycoderegular.ttf") format("ttf");
+
+  font-family: "Envy Code Propo";
+  src: url("/Fonts/EnvyCodePropo.ttf") format("ttf");
+
+  font-family: "Envy Code Bold";
+  src: url("/Fonts/EnvyCodeBold.ttf") format("ttf");
+}
