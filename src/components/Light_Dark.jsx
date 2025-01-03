@@ -57,7 +57,7 @@ const LightDarkToggle = () => {
         borderRadius: '5px',
         border: 'none',
         cursor: 'pointer',
-        backgroundColor: isDark ? '#333333' : '#F4F5F0',
+        backgroundColor: isDark ? '#202020' : '#F4F5F0',
         color: isDark ? '#F4F5F0' : '#202020',
         transition: 'all 0.3s ease'
       }}
