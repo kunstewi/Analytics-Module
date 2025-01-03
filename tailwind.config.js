@@ -5,7 +5,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'envyRegular': ['Envy Code Regular', 'monospace'],
+        'envyPropo': ['Envy Code Propo', 'monospace'],
+        'envyBold': ['Envy Code Bold', 'monospace'],
+      },
+    },
   },
   plugins: [],
 }
