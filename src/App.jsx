@@ -1,11 +1,14 @@
-import React from 'react'
-import Navbar from './components/Navbar'
+import { ThemeProvider } from './components/Light_Dark';
+import Navbar from './components/Navbar';
+import './styles/theme.css';
 
 const App = () => {
   return (
-    <>
-      <Navbar/>
-    </>
+    <ThemeProvider>
+      <div className='min-h-screen'>
+        <Navbar/>
+      </div>
+    </ThemeProvider>
   )
 }
 
