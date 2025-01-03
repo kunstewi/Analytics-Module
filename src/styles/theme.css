@@ -1,0 +1,17 @@
+.light-theme {
+  --background: #F4F5F0;
+  --text: #202020;
+  --primary: #007bff;
+  background-color: var(--background);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+.dark-theme {
+  --background: #202020;
+  --text: #F4F5F0;
+  --primary: #4dabf7;
+  background-color: var(--background);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
