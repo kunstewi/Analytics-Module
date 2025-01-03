@@ -1,5 +1,4 @@
 import Logo from "../Assests/Images/logo.png";
-import LightandDark from "./LightandDark";
 
 const Navbar = () => {
   return (
@@ -11,7 +10,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-1 cursor-pointer">
-          <LightandDark/>
+          
         </div>
       </div>
     </nav>
