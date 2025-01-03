@@ -2,7 +2,7 @@ import React from 'react'
 
 const LandingPage = () => {
   return (
-    <div className='min-h-screen justify-between p-40'>
+    <div className='min-h-5/6 justify-between p-40'>
 
         <div className='flex text-5xl max-w-5xl mx-auto font-black font-envyBold text-center '>
             <h1>Unlock The Power Of Your Social Media <br /> Posts</h1>
