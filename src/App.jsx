@@ -1,9 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./components/Pages/LandingPage";
 import { ThemeProvider } from "./components/Light_Dark";
+import LandingPage from "./components/Pages/LandingPage";
+
 import Navbar from "./components/Navbar";
-import "./styles/theme.css";
 import Docs from "./components/Docs";
+import "./styles/theme.css";
+import AnalyzingPage from "./components/Pages/AnalyzingPage";
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
             <Route path="/" element={<LandingPage />} />
             <Route path="/docs/*" element={<Docs />} />
           </Routes>
+          <AnalyzingPage/>
         </div>
       </ThemeProvider>
     </BrowserRouter>
