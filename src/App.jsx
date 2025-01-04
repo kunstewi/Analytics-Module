@@ -1,18 +1,24 @@
-import AnalyzingPage from './components/AnalyzingPage';
-import LandingPage from './components/LandingPage';
-import { ThemeProvider } from './components/Light_Dark';
-import Navbar from './components/Navbar';
-import './styles/theme.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./components/Pages/LandingPage";
+import { ThemeProvider } from "./components/Light_Dark";
+import Navbar from "./components/Navbar";
+import "./styles/theme.css";
+import Docs from "./components/Docs";
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <div className='min-h-screen'>
-        <Navbar/>
-        <LandingPage/>
-      </div>
-    </ThemeProvider>
-  )
-}
+    <BrowserRouter>
+      <ThemeProvider>
+        <div className="min-h-screen">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/docs/*" element={<Docs />} />
+          </Routes>
+        </div>
+      </ThemeProvider>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
