@@ -4,11 +4,27 @@
 
 @font-face {
   font-family: "Envy Code Regular";
-  src: url("/Fonts/EnvyCodeRegular.ttf") format("ttf");
+  src: url("/fonts/EnvyCodeRegular.ttf") format("ttf");
 
   font-family: "Envy Code Propo";
-  src: url("/Fonts/EnvyCodePropo.ttf") format("ttf");
+  src: url("/fonts/EnvyCodePropo.ttf") format("ttf");
 
   font-family: "Envy Code Bold";
-  src: url("/Fonts/EnvyCodeBold.ttf") format("ttf");
+  src: url("/fonts/EnvyCodeBold.ttf") format("ttf");
+}
+
+:root {
+  --body_background: #fff;
+  --body_color: #000;
+  --link_color: #0fcab4;
+}
+
+[data-theme="dark"] {
+  --body_background: #000;
+  --body_color: #fff;
+  --link_color: #bd0fca;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
 }
