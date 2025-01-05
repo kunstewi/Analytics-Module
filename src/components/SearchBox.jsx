@@ -1,12 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const SearchBox = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [isExpanded, setIsExpanded] = useState(false);
+  const searchRef = useRef(null);
 
   const handleSearch = (e) => {
     const value = e.target.value;
     setSearchTerm(value);
     highlightText(value);
+  };
+
+  const toggleSearch = () => {
+    setIsExpanded(!isExpanded);
+    if (!isExpanded) {
+      setTimeout(() => {
+        document.querySelector('input[type="text"]').focus();
+      }, 100);
+    }
   };
 
   const highlightText = (searchText) => {
@@ -71,8 +82,16 @@ const SearchBox = () => {
   };
 
   useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setIsExpanded(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      // Cleanup highlights when component unmounts
+      document.removeEventListener('mousedown', handleClickOutside);
+      // Keep your existing cleanup code for highlights
       const existingHighlights = document.querySelectorAll("mark");
       existingHighlights.forEach((highlight) => {
         const parent = highlight.parentNode;
@@ -84,23 +103,26 @@ const SearchBox = () => {
       });
     };
   }, []);
-
-  return (
-    <div className="p-4 w-full max-w-[400px]">
-      <div className="relative w-full">
-        <input
-          type="text"
-          className="w-full py-3 px-4 pr-10 border-2  border-[#12344d] hover:border-[#dd8827] rounded-full text-base transition-colors duration-300 focus:outline-none focus:border-blue-500"
-          placeholder="Search..."
-          value={searchTerm}
-          onChange={handleSearch}
-        />
-        <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
-          🔍
-        </span>
+    return (
+      <div className="inline-flex items-center" ref={searchRef}>
+        <div className={`flex items-center transition-all duration-300 ${isExpanded ? 'w-[300px]' : 'w-8'}`}>
+          <input
+            type="text"
+            className={`w-full py-2 px-4 pr-8 border-2 border-[#12344d] hover:border-[#dd8827] rounded-full text-base transition-all duration-300 focus:outline-none focus:border-blue-500 ${
+              isExpanded ? 'opacity-100 visible' : 'opacity-0 invisible w-0 p-0'
+            }`}
+            placeholder="Search..."
+            value={searchTerm}
+            onChange={handleSearch}
+          />
+          <button 
+            onClick={toggleSearch}
+            className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+          >
+            🔍
+          </button>
+        </div>
       </div>
-    </div>
-  );
-};
-
+    );
+  };
 export default SearchBox;
