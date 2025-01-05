@@ -5,16 +5,15 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-5/6 justify-between p-40">
-      <div className="flex text-5xl max-w-5xl mx-auto font-black font-envyBold text-center ">
+    <div className="min-h-5/6 justify-between pt-20 sm:pt-40">
+      <div className="flex flex-col text-2xl sm:text-4xl md:text-6xl lg:text-8xl w-full mx-auto font-black font-envyBold text-center ">
         <h1>
-          Unlock The Power Of Your Social Media <br /> Posts
+          Unlock The Power Of Your Social Media Posts
         </h1>
       </div>
-      <div className="text-xl max-w-5xl mx-auto font-thin font-envyPropo text-center pt-6">
+      <div className="text-base  sm:text-lg md:text-3xl max-w-5xl mx-auto font-thin font-envyPropo text-center pt-6">
         <h2>
-          Analyze engagement across platforms. Make data-driven decisions to{" "}
-          <br />
+          Analyze engagement across platforms. Make data-driven decisions to
           boost your online presence.
         </h2>
       </div>
