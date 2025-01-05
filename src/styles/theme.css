@@ -1,19 +1,36 @@
-.light-theme {
+:root {
   --background: #f4f5f0;
   --text: #202020;
   --primary: #007bff;
+}
+
+body[data-theme='light'] {
+  --background: #f4f5f0;
+  --text: #202020;
+  --primary: #007bff;
+}
+
+body[data-theme='dark'] {
+  --background: #202020;
+  --text: #f4f5f0;
+  --primary: #4dabf7;
+}
+
+/* This ensures all components inherit theme colors */
+body {
   background-color: var(--background);
   color: var(--text);
   transition: all 0.3s ease;
 }
 
-.dark-theme {
-  --background: #202020;
-  --text: #f4f5f0;
-  --primary: #4dabf7;
+/* This will target all components */
+#root, 
+#root > div,
+.signin-component,
+.other-components {
   background-color: var(--background);
   color: var(--text);
-  transition: all 0.3s ease;
+  min-height: 100vh;
 }
 
 textarea {
@@ -38,4 +55,8 @@ textarea {
 }
 .chapter-navigation li {
   margin-bottom: 0.5rem;
+}
+
+button {
+  color: var(--button-text);
 }
