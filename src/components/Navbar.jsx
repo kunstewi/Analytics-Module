@@ -1,5 +1,4 @@
 import LightDarkToggle from "./Light_Dark";
-import SearchBox from "./SearchBox";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -13,7 +12,6 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center gap-1 cursor-pointer">
-          <SearchBox />
           <LightDarkToggle />
         </div>
       </div>
