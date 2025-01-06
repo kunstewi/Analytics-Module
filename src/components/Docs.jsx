@@ -55,7 +55,7 @@ const Docs = () => {
             {chapters.map((chapter) => (
               <li
                 key={chapter.id}
-                className="cursor-pointer py-2 px-3 hover:bg-gray-200 dark:hover:bg-gray-700 rounded"
+                className="cursor-pointer py-2 px-3 dark:hover:bg-[#f2f2] rounded"
                 onClick={() => navigate(chapter.path)}
                 role="menuitem"
                 tabIndex={0}
