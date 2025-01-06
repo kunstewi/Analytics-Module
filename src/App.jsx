@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AnalyzingPage from "./components/Pages/AnalyzingPage";
 import LandingPage from "./components/Pages/LandingPage";
 import NotFound from "./components/Pages/NotFound";
 import Signin from "./components/Pages/Signin";
