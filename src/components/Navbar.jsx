@@ -7,8 +7,8 @@ const Navbar = () => {
     <nav className="shadow-2xl transition-all duration-200">
       <div className=" flex max-w-7xl mx-auto px-3 py-4 justify-between">
         <Link to="/" className="flex items-center gap-1 cursor-pointer ">
-          <h2 className="text-2xl hover:text-[#779dda] font-envyBold font-black">
-            <b className="text-3xl font-serif">A</b>nalytics <b className="text-3xl font-serif">M</b>odule
+          <h2 className="text-2xl hover:text-[#6590d4] font-envyBold font-black">
+            <b className="text-xl font-sans">NX</b> Analytics
           </h2>
         </Link>
 
