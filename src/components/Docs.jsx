@@ -7,16 +7,16 @@ import Chapter4 from "../components/Book/chapter-4";
 
 const chapters = [
   { id: 1, name: "Introduction", path: "/docs/chapter-1", component: Chapter1 },
-  { id: 2, name: "Setup", path: "/docs/chapter-2", component: Chapter2 },
+  { id: 2, name: "Key Features", path: "/docs/chapter-2", component: Chapter2 },
   {
     id: 3,
-    name: "How does Analytics Module works?",
+    name: "System requirements",
     path: "/docs/chapter-3",
     component: Chapter3,
   },
   {
     id: 4,
-    name: "How can you contribute",
+    name: "How to use  our App",
     path: "/docs/chapter-4",
     component: Chapter4,
   },
