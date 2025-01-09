@@ -172,7 +172,7 @@
                 "trace_as_input": true,
                 "trace_as_metadata": true,
                 "type": "str",
-                "value": "how reels perform compared to carousels"
+                "value": "should i upload reels or carousels to get more views"
               },
               "sender": {
                 "advanced": true,
@@ -276,12 +276,12 @@
         "height": 234,
         "id": "ChatInput-NtwPI",
         "position": {
-          "x": 743.9745420290319,
-          "y": 463.6977510207854
+          "x": 719.383817682666,
+          "y": 381.7286698662324
         },
         "positionAbsolute": {
-          "x": 743.9745420290319,
-          "y": 463.6977510207854
+          "x": 719.383817682666,
+          "y": 381.7286698662324
         },
         "selected": false,
         "type": "genericNode",
@@ -412,12 +412,12 @@
         "height": 302,
         "id": "ParseData-aKNcA",
         "position": {
-          "x": 1606.0595305373527,
-          "y": 751.4473696960695
+          "x": 1630.6502548837188,
+          "y": 677.6751966569718
         },
         "positionAbsolute": {
-          "x": 1606.0595305373527,
-          "y": 751.4473696960695
+          "x": 1630.6502548837188,
+          "y": 677.6751966569718
         },
         "selected": false,
         "type": "genericNode",
@@ -564,12 +564,12 @@
         "height": 433,
         "id": "Prompt-KUklv",
         "position": {
-          "x": 1977.9097981422992,
-          "y": 640.5656416923846
+          "x": 2043.4850630659416,
+          "y": 493.0212956141893
         },
         "positionAbsolute": {
-          "x": 1977.9097981422992,
-          "y": 640.5656416923846
+          "x": 2043.4850630659416,
+          "y": 493.0212956141893
         },
         "selected": false,
         "type": "genericNode",
@@ -713,12 +713,12 @@
         "height": 475,
         "id": "SplitText-kEnGY",
         "position": {
-          "x": 1683.4543896546102,
-          "y": 1350.7871623588553
+          "x": 1250.9893982036815,
+          "y": 1798.9781534989086
         },
         "positionAbsolute": {
-          "x": 1683.4543896546102,
-          "y": 1350.7871623588553
+          "x": 1250.9893982036815,
+          "y": 1798.9781534989086
         },
         "selected": false,
         "type": "genericNode",
@@ -990,12 +990,12 @@
         "height": 234,
         "id": "ChatOutput-UAafG",
         "position": {
-          "x": 2734.385670401691,
-          "y": 808.2967893015561
+          "x": 2984.3913679230777,
+          "y": 701.7369838006374
         },
         "positionAbsolute": {
-          "x": 2734.385670401691,
-          "y": 808.2967893015561
+          "x": 2984.3913679230777,
+          "y": 701.7369838006374
         },
         "selected": false,
         "type": "genericNode",
@@ -2224,51 +2224,23 @@
         "height": 232,
         "id": "File-tQctA",
         "position": {
-          "x": 1318.9043936921921,
-          "y": 1486.3263312921847
+          "x": 1224.548395557444,
+          "y": 1329.066334400938
         },
         "positionAbsolute": {
-          "x": 1318.9043936921921,
-          "y": 1486.3263312921847
+          "x": 1224.548395557444,
+          "y": 1329.066334400938
         },
         "selected": false,
         "type": "genericNode",
         "width": 320
       },
       {
-        "data": {
-          "id": "note-bw4zr",
-          "node": {
-            "description": "### 💡 Add your OpenAI API key here 👇",
-            "display_name": "",
-            "documentation": "",
-            "template": {
-              "backgroundColor": "transparent"
-            }
-          },
-          "type": "note"
-        },
-        "dragging": false,
-        "height": 324,
-        "id": "note-bw4zr",
-        "position": {
-          "x": 1692.2322233423606,
-          "y": 1821.9077961087607
-        },
-        "positionAbsolute": {
-          "x": 1692.2322233423606,
-          "y": 1821.9077961087607
-        },
-        "selected": false,
-        "type": "noteNode",
-        "width": 324
-      },
-      {
         "id": "Google Generative AI Embeddings-6g7a9",
         "type": "genericNode",
         "position": {
-          "x": 759.1129644770081,
-          "y": 765.6054313210823
+          "x": 734.5222401306421,
+          "y": 777.9007934942654
         },
         "data": {
           "node": {
@@ -2377,8 +2349,8 @@
         "width": 320,
         "height": 382,
         "positionAbsolute": {
-          "x": 759.1129644770081,
-          "y": 765.6054313210823
+          "x": 734.5222401306421,
+          "y": 777.9007934942654
         },
         "dragging": false
       },
@@ -2386,8 +2358,8 @@
         "id": "GoogleGenerativeAIModel-v6ZGk",
         "type": "genericNode",
         "position": {
-          "x": 2363.80499766992,
-          "y": 560.9433482048405
+          "x": 2499.053981574932,
+          "y": 339.62682908754766
         },
         "data": {
           "node": {
@@ -2688,8 +2660,8 @@
         "width": 320,
         "height": 760,
         "positionAbsolute": {
-          "x": 2363.80499766992,
-          "y": 560.9433482048405
+          "x": 2499.053981574932,
+          "y": 339.62682908754766
         },
         "dragging": false
       },
@@ -2697,8 +2669,8 @@
         "id": "Google Generative AI Embeddings-HIpdx",
         "type": "genericNode",
         "position": {
-          "x": 1692.940625080354,
-          "y": 1904.9854188066956
+          "x": 1649.6941259352611,
+          "y": 1368.7288294075443
         },
         "data": {
           "node": {
@@ -2807,8 +2779,8 @@
         "width": 320,
         "height": 382,
         "positionAbsolute": {
-          "x": 1692.940625080354,
-          "y": 1904.9854188066956
+          "x": 1649.6941259352611,
+          "y": 1368.7288294075443
         },
         "dragging": false
       }
@@ -3088,13 +3060,13 @@
       }
     ],
     "viewport": {
-      "x": 12.932431957571225,
-      "y": -69.5630421824929,
-      "zoom": 0.2543558488536791
+      "x": 110.91387833281692,
+      "y": -2.601138259927268,
+      "zoom": 0.22081654451548938
     }
   },
   "is_component": false,
-  "updated_at": "2025-01-09T05:42:58+00:00",
+  "updated_at": "2025-01-09T06:26:33+00:00",
   "icon": "Database",
   "name": "Vector Store RAG",
   "description": "Load your data for chat context with Retrieval Augmented Generation.",
